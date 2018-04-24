@@ -1,0 +1,16 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+
+body {
+    background-color: #ddd;
+}
+
+body > .container {
+    padding: 60px 15px 0;
+}

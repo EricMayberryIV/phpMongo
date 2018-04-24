@@ -1,0 +1,8 @@
+/* delete icon */
+<td class="text-center">
+    <a data-toggle="modal" data-target="#deleteModal">
+        <div style="color:Tomato">
+          <i class="fas fa-trash-alt"></i>
+        </div>
+    </a>
+</td>
