@@ -20,7 +20,7 @@ if (empty($m)){
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Delete Record</title>
+    <title>Record Info</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -44,16 +44,74 @@ if (empty($m)){
     <main role="main" class="container">
         <div>&nbsp;</div>
         <div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <?php
+                    $collection = $db->vinyl;
+                    $record = $collection->findOne(array('_id' => new MongoId($id)));
+                    if (empty($record['img_url'])){
+                        echo "<img src='uploads/placeholder.svg' height='300' width='300'>";
+                    } else {
+                        echo "<img src='".$record['img_url']."' height='300' width='300'>";
+                    }
+                    ?>
+                </div>
+                <div class="col-lg-8">
+                    <?php
+                    echo "<h1>".$record['artist']."</h1>";
+                    echo "<h2>".$record['title']."</h2><br/>";
+                    echo "<p><span class='h5'>Year: ".$record['year']."</span><br/>";
+                    echo "<span class='h5'>Genre: ".$record['genre']."</span><br/>";
+                    echo "<span class='h5'>Label: ".$record['label']."</span></p>";
+                    ?>
+                    <div class="row">
+                        <div class="col-3">
+                            <?php echo "<span class='h6'>Size ".$record['size']."\"</span>"; ?>
+                        </div>
+                        <div class="col-5">
+                            <?php echo "<span class='h6'>Speed ".$record['speed']."rpm</span>"; ?>
+                        </div>
+                        <div class="col-4">
+                            <?php 
+                            if ($record['180']==true){
+                                echo "<span class='h6'>180g? &nbsp;<i class='far fa-check-square'></i></span>";
+                            } else {
+                                echo "<span class='h6'>180g? &nbsp;<i class='far fa-square'></i></span>";
+                            } 
+                            ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <?php
-            $collection = $db->vinyl;
-            $record = $collection->findOne(array('_id' => new MongoId($id)));
-            if (empty($record['img_url'])){
-                echo "<img class='' src='uploads/placeholder.svg' height='300' width='300'><br/><br/>";
+            if ($record['tracks']!==null){
+                echo "<br/>";
+                echo "<ul class='list-group collapsed accordion' data-toggle='collapse' data-target='#collapseOne' aria-controls='collapseOne'>";
+                echo "<li class='list-group-item active'>Tracks</li>";
+                echo "<div id='collapseOne' class='collapse' aria-labelledby='headingOne' data-parent='#accordion'>";
+                $count = 1;
+                foreach ($record['tracks'] as &$track) {
+                    echo "<li class='list-group-item'>".$count.") ".$track."</li>";
+                    $count++;
+                }
+                echo "</div>";
+                echo "</ul>";
             } else {
-                echo "<img src='".$record['img_url']."' height='300' width='300'><br/><br/>";
             }
-            echo "<h1>".$record['artist']."</h1><br/>";
-            echo "<h2>".$record['title']."</h2>";
+            if ($record['members']['name']!==null){
+                echo "<br/>";
+                echo "<ul class='list-group collapsed accordion' data-toggle='collapse' data-target='#collapseTwo' aria-controls='collapseTwo'>";
+                echo "<li class='list-group-item active'>Members</li>";
+                echo "<div id='collapseTwo' class='collapse' aria-labelledby='headingTwo' data-parent='#accordion'>";
+                $max = sizeof($record['members']['name']);
+                for ($row = 0; $row < $max; $row++) {
+                  echo "<li class='list-group-item'>".$record['members']['name'][($row+1)]." - ".$record['members']['instrument'][($row+1)]."</li>";;
+                }
+                
+                echo "</div>";
+                echo "</ul>";
+            } else {
+            }
             ?>
         </div>
         <br/>
