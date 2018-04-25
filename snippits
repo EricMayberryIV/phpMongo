@@ -6,3 +6,8 @@
         </div>
     </a>
 </td>
+
+/* Reset SSH Key */
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/id_rsa_mayberry
+Delete and recreate ssh key on GitHub.com
