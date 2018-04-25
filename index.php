@@ -169,7 +169,7 @@ if (empty($m)){
                       </div>
                       <br/>
                       <label for="inputSize">Size</label>
-                      <select class="form-control" name="speed" id="inputSpeed">
+                      <select class="form-control" name="size" id="inputSpeed">
                           <option value="7">7"</option>
                           <option value="10">10"</option>
                           <option value="12" selected="selected">12"</option>
@@ -177,9 +177,9 @@ if (empty($m)){
                       <br/>
                       <label for="inputSpeed">Speed</label>
                       <select class="form-control" name="speed" id="inputSpeed">
-                          <option value="33" selected="selected">33</option>
-                          <option value="45">45</option>
-                          <option value="78">78</option>
+                          <option value="33" selected="selected">33rpm</option>
+                          <option value="45">45rpm</option>
+                          <option value="78">78rpm</option>
                       </select>
                       <br/>
                       <div class="form-check">
