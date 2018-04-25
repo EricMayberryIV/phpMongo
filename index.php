@@ -131,7 +131,7 @@ if (empty($m)){
                       <select class="form-control" name="year" id="inputYear">
                           <?php
                           
-                          for ($i = 1940; $i <= 2050; $i++) {
+                          for ($i = $thisYear; $i >= 1900; $i--) {
                               if($i===$thisYear){
                                   echo '<option value="' . $i . '" selected="selected">' . $i . '</option>';
                               }
@@ -157,7 +157,7 @@ if (empty($m)){
                       </select>
                       <br/>
                       <label for="trackAmt">Tracks</label>
-                      <input type="text" id="trackAmt" value="" onchange="addFields()" placeholder="# of Tracks">
+                      <input type="text" id="trackAmt" name="trackAmt" value="" onchange="addFields()" placeholder="# of Tracks">
                       <br />
                       <div id="trackList">
                       </div>
@@ -192,31 +192,6 @@ if (empty($m)){
                           <button class="btn btn-outline-primary" type="reset">Reset</button>
                           <button class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
                           <button class="btn btn-outline-success" type="submit" name="submit">Add</button>
-                      </div>
-                  </form>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-        <p id="delete"></p>
-        <!-- Delete Modal -->
-        <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Delete Record</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                  <form class="form-signin" action="actAddCo.php" method="post">
-                      <h4>Are you sure you want to delete XXXX?</h4>
-                      <br/>
-                      <div class="btn-group float-right" role="group">
-                          <button class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
-                          <button class="btn btn-outline-danger" type="submit">Delete</button>
                       </div>
                   </form>
               </div>

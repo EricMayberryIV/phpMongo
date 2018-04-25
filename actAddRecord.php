@@ -131,4 +131,4 @@ $document = array(
   );
 	
 $collection->insert($document);
-header("location: /"); //RIGHT HERE <--- UNCOMMENT TO MAKE IT WORK!!!!
+header("location: /");
