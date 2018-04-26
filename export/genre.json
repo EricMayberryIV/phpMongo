@@ -1,0 +1,11 @@
+{ "_id" : { "$oid" : "5add2bc13b2bee87088b4567" }, "genre_name" : "Punk Rock", "genre_notes" : null }
+{ "_id" : { "$oid" : "5add2bd23b2bee85068b456c" }, "genre_name" : "Hip Hop", "genre_notes" : null }
+{ "_id" : { "$oid" : "5add2bf33b2bee86068b4570" }, "genre_name" : "Folk", "genre_notes" : null }
+{ "_id" : { "$oid" : "5add2c093b2bee84068b456e" }, "genre_name" : "Alternative", "genre_notes" : null }
+{ "_id" : { "$oid" : "5add2c293b2bee85068b456d" }, "genre_name" : "Indie", "genre_notes" : null }
+{ "_id" : { "$oid" : "5add2c453b2bee86068b4571" }, "genre_name" : "Pop", "genre_notes" : null }
+{ "_id" : { "$oid" : "5add2c503b2bee84068b456f" }, "genre_name" : "Ska", "genre_notes" : null }
+{ "_id" : { "$oid" : "5add2ebf3b2bee84068b4570" }, "genre_name" : "Soundtrack", "genre_notes" : "Soundtracks & Scores" }
+{ "_id" : { "$oid" : "5add308e3b2bee85068b456f" }, "genre_name" : "Soul", "genre_notes" : "" }
+{ "_id" : { "$oid" : "5add3e5e3b2bee85068b4570" }, "genre_name" : "Reggae", "genre_notes" : "" }
+{ "_id" : { "$oid" : "5adfc0713b2bee91068b4567" }, "genre_name" : "Rock", "genre_notes" : "" }
