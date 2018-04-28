@@ -31,7 +31,6 @@ $size;
 $speed;
 $b180;
 
-
 $title = $_POST['title'];
 $artist = $_POST['artist'];
 $genre = $_POST['genre'];
@@ -43,6 +42,10 @@ $size = (int)$size;
 $speed = $_POST['speed'];
 $speed = (int)$speed;
 $b180 = $_POST['180'];
+if($b180=='true'){
+    $b180 = true;
+}
+
 
 
 $time = time();
