@@ -48,10 +48,9 @@ if (empty($m)){
         <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#addModal">
           Add
         </button><br/><br/>
-        <table id="companies" class="display">
+        <table id="companies" class="display" style="width:100%">
             <thead>
                 <tr>
-                    <th>ID</th>
                     <th>Genre</th>
                     <th>Notes</th>
                 </tr>
@@ -61,10 +60,7 @@ if (empty($m)){
                 $collection = $db->genre;
                 $cursor = $collection->find();
                 foreach ($cursor as $document) {
-                    $id_temp = $document["_id"];
-                    $id = substr($id_temp, 0,8);
-                  echo "<tr><td>" . $id . "</td>
-                            <td>" . $document["genre_name"] . "</td>
+                  echo "<tr><td>" . $document["genre_name"] . "</td>
                             <td>" . $document["genre_notes"] . "</td></tr>";
                }
                 ?>
@@ -122,7 +118,7 @@ if (empty($m)){
                 buttons: [
                     'copyHtml5','pdf'
                 ],
-                "order": [[ 1, "asc" ]],
+                "order": [[ 0, "asc" ]],
                 responsive: {
                     details: true
                 } 
