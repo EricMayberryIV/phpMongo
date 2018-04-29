@@ -54,7 +54,7 @@ if (empty($m)){
                 echo "<img src='".$record['img_url']."' height='300' width='300'><br/><br/>";
             }
             echo "<div class='btn-group' role='group'>
-                      <a href='/' class='btn btn-outline-secondary'>Cancel</a>
+                      <a href='javascript: goBack();' class='btn btn-outline-secondary'>Cancel</a>
                       <a href='actDeleteRecord.php?id=$id' class='btn btn-outline-danger'>Delete</a>
                   </div>";
             ?>
@@ -70,5 +70,8 @@ if (empty($m)){
     <script>window.jQuery || document.write('<script src="assets/js/jquery-slim.min.js"><\/script>')</script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+      <script>function goBack() {
+            window.history.back();
+        }</script>
   </body>
 </html>
