@@ -125,7 +125,7 @@ if (empty($m)){
         } 
         ?>
         <div class="btn-group" role="group" aria-label="Basic example">
-            <a href='/' class='btn btn-outline-secondary'>Back</a>
+            <a href='javascript: goBack();' class='btn btn-outline-secondary'>Back</a>
             <a href='DeleteRecord.php?id=<?php echo $id; ?>' class='btn btn-outline-danger'>Delete</a>
             <button class='btn btn-outline-primary' data-toggle="modal" data-target="#editModal">Edit</button>
         </div>
