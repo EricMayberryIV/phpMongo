@@ -10,9 +10,9 @@
         <li class="nav-item active">
           <a class="nav-link" href="about.php">About</a>
         </li>
-<!--         <li class="nav-item active">
+        <li class="nav-item active">
           <a class="nav-link" href="gallery.php">Gallery</a>
-        </li> -->
+        </li>
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Maintenance</a>
             <div class="dropdown-menu" aria-labelledby="dropdown03">

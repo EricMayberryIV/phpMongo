@@ -43,51 +43,30 @@ if (empty($m)){
           <!-- Begin page content -->
           <main role="main" class="container">
               <div class="row">
-<!--                   <div class="card col-md-6 col-lg-4"> -->
-<!--                       <div class="card-body text-center"> -->
-                          <img class="card col-md-6 col-lg-4" src="uploads/amyWinehouse_backToBlack4573336125.jpg"  height="300" width="300">
-<!--                       </div> -->
-<!--                   </div> -->
-<!--                   <div class="card col-md-6 col-lg-4"> -->
-<!--                       <div class="card-body text-center"> -->
-                          <img class="card col-md-6 col-lg-4" src="uploads/kidCudi_manOnTheMoon10671140480.jpg"  height="300" width="300">
-<!--                       </div> -->
-<!--                   </div> -->
-<!--                   <div class="card col-md-6 col-lg-4"> -->
-<!--                       <div class="card-body text-center"> -->
-                          <img class="card col-md-6 col-lg-4" src="uploads/lonelyIsland_wackAlbum6097795072.jpg"  height="300" width="300">
-<!--                       </div> -->
-<!--                   </div> -->
-<!--                   <div class="card col-md-6 col-lg-4"> -->
-<!--                       <div class="card-body text-center"> -->
-                          <img class="card col-md-6 col-lg-4" src="uploads/lonelyIsland_wackAlbum6097795072.jpg"  height="300" width="300">
-<!--                       </div> -->
-<!--                   </div> -->
-<!--                   <div class="card col-md-6 col-lg-4"> -->
-<!--                       <div class="card-body text-center"> -->
-                          <img class="card col-md-6 col-lg-4" src="uploads/lonelyIsland_wackAlbum6097795072.jpg"  height="300" width="300">
-<!--                       </div> -->
-<!--                   </div> -->
-<!--                   <div class="card col-md-6 col-lg-4"> -->
-<!--                       <div class="card-body text-center"> -->
-                          <img class="card col-md-6 col-lg-4" src="uploads/lonelyIsland_wackAlbum6097795072.jpg"  height="300" width="300">
-<!--                       </div> -->
-<!--                   </div> -->
-<!--                   <div class="card col-md-6 col-lg-4"> -->
-<!--                       <div class="card-body text-center"> -->
-                          <img class="card col-md-6 col-lg-4" src="uploads/lonelyIsland_wackAlbum6097795072.jpg"  height="300" width="300">
-<!--                       </div> -->
-<!--                   </div> -->
-<!--                   <div class="card col-md-6 col-lg-4"> -->
-<!--                       <div class="card-body text-center"> -->
-                          <img class="card col-md-6 col-lg-4" src="uploads/lonelyIsland_wackAlbum6097795072.jpg"  height="300" width="300">
-<!--                       </div> -->
-<!--                   </div> -->
-<!--                   <div class="card col-md-6 col-lg-4"> -->
-<!--                       <div class="card-body text-center"> -->
-                          <img class="card col-md-6 col-lg-4" src="uploads/lonelyIsland_wackAlbum6097795072.jpg"  height="300" width="300">
-<!--                       </div> -->
-<!--                   </div> -->
+                  <?php
+                  $dir    = '/uploads';
+                  $files = opendir($dir);
+                  $dir_open = opendir('./uploads');
+                  $count = 0;
+                  while (false !== ($filename = readdir($dir_open))){
+                      if ($filename != "." &&
+                          $filename != ".." &&
+                          $filename != "placeholder.svg"){
+                          $files[$count] = $filename;
+                          $count++;
+                      }
+                     
+                  }
+                  shuffle($files);
+                  foreach($files as &$value){
+                      $value = 'uploads/'.$value;
+                      echo "<div class='card col-md-6 col-lg-4'>";
+                      echo "<div class='card-body text-center'>";
+                      echo "<img class='card' src='".$value."'  height='300' width='300'>";
+                      echo "</div>";
+                      echo "</div>";
+                  }
+                  ?>
               </div>
           </main>
           <!-- Bootstrap core JavaScript
