@@ -62,7 +62,7 @@ if (empty($m)){
                       $value = 'uploads/'.$value;
                       echo "<div class='card col-md-6 col-lg-4'>";
                       echo "<div class='card-body text-center'>";
-                      echo "<img class='card' src='".$value."'  height='300' width='300'>";
+                      echo "<img src='".$value."'  height='300' width='300'>";
                       echo "</div>";
                       echo "</div>";
                   }
