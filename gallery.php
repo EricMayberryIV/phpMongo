@@ -60,7 +60,7 @@ if (empty($m)){
                   shuffle($files);
                   foreach($files as &$value){
                       $value = 'uploads/'.$value;
-                      echo "<div class='card col-md-6 col-lg-4'>";
+                      echo "<div class='card col-md-6 col-xl-4'>";
                       echo "<div class='card-body text-center'>";
                       echo "<img src='".$value."'  height='300' width='300'>";
                       echo "</div>";
