@@ -2,15 +2,8 @@
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
-
-include 'db.php';
 $id = $_GET['id'];
 $_SESSION['id'] = $id;
-if (empty($m)){
-    if (empty($db)){
-        die('Database connection is having issues<br/><br/>');
-    }
-}
 ?>
 
 <!doctype html>
@@ -59,7 +52,7 @@ if (empty($m)){
                               $(this).fadeIn('slow');
                           });
                       });
-                  }, 10000);
+                  }, 8000);
               });     
           </script>
     </body>
