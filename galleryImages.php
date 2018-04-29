@@ -4,10 +4,10 @@ if (empty($m)){
     if (empty($db)){
         die('Database connection is having issues<br/><br/>');
     }
+} else {
+    $collection = $db->vinyl;
 }
-$collection = $db->vinyl;
 ?>
-
 <div class="row justify-content-center">
     <?php
     $dir    = '/uploads';
@@ -21,10 +21,7 @@ $collection = $db->vinyl;
             $files[$count] = $filename;
             $count++;
         }
-  
     }
-    
-    
     shuffle($files);
     foreach($files as &$value){
         $value = 'uploads/'.$value;
