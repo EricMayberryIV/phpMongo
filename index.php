@@ -93,11 +93,11 @@ if (empty($m)){
                            <td>" . $document["year"] . "</td>
                            <td>" . $document["genre"] . "</td>
                            <td>" . $document["label"] . "</td>
-                           <td>" . $document["size"] . "\"</td>
+                           <td>" . $document["size"] . "\"<span class='d-none'>" . $document["size"] . " inch</span></td>
                            ";
                    if ($document['180']==true){
                                 echo "<td class='text-center'><span class='h6'><i class='far fa-check-square'></i></span>".
-                                    "<span class='d-none'>true</span></td>";
+                                    "<span class='d-none'>180g</span></td>";
                             } else {
                                 echo "<td class='text-center'><span class='h6'><i class='far fa-square'></i></span>".
                                     "<span class='d-none'>false</span></td>";
