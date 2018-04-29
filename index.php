@@ -93,7 +93,7 @@ if (empty($m)){
                            <td>" . $document["year"] . "</td>
                            <td>" . $document["genre"] . "</td>
                            <td>" . $document["label"] . "</td>
-                           <td>" . $document["size"] . "\"<span class='d-none'>" . $document["size"] . " inch</span></td>
+                           <td>" . $document["size"] . "\"</td>
                            ";
                    if ($document['180']==true){
                                 echo "<td class='text-center'><span class='h6'><i class='far fa-check-square'></i></span>".
