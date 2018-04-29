@@ -52,11 +52,13 @@ if (empty($m)){
             <thead>
                 <tr>
                     <th>Cover</th>
-                    <th>Title</th>
                     <th>Artist</th>
+                    <th>Title</th>
+                    <th>Year</th>
                     <th>Genre</th>
                     <th>Label</th>
-                    <th>Year</th>
+                    <th>Size</th>
+                    <th>180g</th>
                     <th>Delete</th>
                 </tr>
             </thead>
@@ -65,21 +67,42 @@ if (empty($m)){
                $collection = $db->vinyl;
                $cursor = $collection->find();
                foreach ($cursor as $document) {
+                   $b180 = $document["180"];
                    $id_temp = $document["_id"];
-                   echo "<tr>";
+                   echo "<tr>
+                   ";
                    if ($document["img_url"] != ''){
-                       echo "<td class='text-center'><a href='info.php?id=$id_temp'><img src='" . 
+                       echo "<td class='text-center'>
+                       <a href='info.php?id=$id_temp'>
+                       <img src='" . 
                            $document["img_url"] . 
-                           "' height='60' width='60'></a></td>";
+                           "' height='60' width='60'>
+                           </a>
+                       </td>
+                       ";
                    } else {
-                       echo "<td class='text-center'><a href='info.php?id=$id_temp'><img src='uploads/placeholder.svg' height='60' width='60'></a></td>";
+                       echo "<td class='text-center'>
+                       <a href='info.php?id=$id_temp'>
+                       <img src='uploads/placeholder.svg' height='60' width='60'>
+                       </a>
+                   </td>
+                   ";
                    }
-                  echo     "<td>" . $document["title"] . "</td>
-                           <td>" . $document["artist"] . "</td>
+                  echo     "<td>" . $document["artist"] . "</td>
+                           <td>" . $document["title"] . "</td>
+                           <td>" . $document["year"] . "</td>
                            <td>" . $document["genre"] . "</td>
                            <td>" . $document["label"] . "</td>
-                           <td>" . $document["year"] . "</td>
-                           <td class='text-center'>
+                           <td>" . $document["size"] . "\"</td>
+                           ";
+                   if ($document['180']==true){
+                                echo "<td class='text-center'><span class='h6'><i class='far fa-check-square'></i></span>".
+                                    "<span class='d-none'>true</span></td>";
+                            } else {
+                                echo "<td class='text-center'><span class='h6'><i class='far fa-square'></i></span>".
+                                    "<span class='d-none'>false</span></td>";
+                            } 
+                  echo     "<td class='text-center'>
                                     <a href='DeleteRecord.php?id=$id_temp'>
                                         <div style='color:Tomato'>
                                           <i class='fas fa-trash-alt'></i>
@@ -219,9 +242,23 @@ if (empty($m)){
             $('#companies').DataTable({
                 dom: 'Bfrtip',
                 buttons: [
-                    'copyHtml5','pdf'
+                    {
+                        extend: 'copyHtml5',
+                        exportOptions: {
+                            columns: [ 1, 2, 3, 4, 5, 6, 7 ]
+                        }
+                    },
+                    {
+                        extend: 'pdfHtml5',
+                        exportOptions: {
+                            columns: [ 1, 2, 3, 4, 5, 6, 7 ]
+                        }
+                    }
                 ],
-                "order": [[ 2, "asc" ],[5, "asc"]],
+                "order": [
+                    [1, "asc" ],
+                    [3, "asc"]
+                ],
                 "responsive": true
             });
         } );
