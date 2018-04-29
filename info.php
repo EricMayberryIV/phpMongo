@@ -124,10 +124,12 @@ if (empty($m)){
             $numMembers = sizeof($record['members']['name']);
         } 
         ?>
-        
-        <a href='/' class='btn btn-outline-secondary'>Back</a>
-        <button class='btn btn-outline-primary float-right' data-toggle="modal" data-target="#editModal">Edit</button>
-        
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <a href='/' class='btn btn-outline-secondary'>Back</a>
+            <a href='DeleteRecord.php?id=<?php echo $id; ?>' class='btn btn-outline-danger'>Delete</a>
+            <button class='btn btn-outline-primary' data-toggle="modal" data-target="#editModal">Edit</button>
+        </div>
+            
         <br/>&nbsp;
         <!-- Delete Modal -->
         <div class="modal fade" id="editModal" tabindex="-1" role="dialog">
