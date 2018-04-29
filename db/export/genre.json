@@ -1,0 +1,20 @@
+{ "_id" : { "$oid" : "5ae4ecc7ada8840de58904ad" }, "genre_name" : "Alternative", "genre_notes" : null }
+{ "_id" : { "$oid" : "5ae4ecc7ada8840de58904ae" }, "genre_name" : "Blues", "genre_notes" : null }
+{ "_id" : { "$oid" : "5ae4ecc7ada8840de58904af" }, "genre_name" : "Classical", "genre_notes" : null }
+{ "_id" : { "$oid" : "5ae4ecc7ada8840de58904b0" }, "genre_name" : "Country", "genre_notes" : null }
+{ "_id" : { "$oid" : "5ae4ecc7ada8840de58904b1" }, "genre_name" : "Dance", "genre_notes" : null }
+{ "_id" : { "$oid" : "5ae4ecc7ada8840de58904b2" }, "genre_name" : "Electronic", "genre_notes" : null }
+{ "_id" : { "$oid" : "5ae4ecc7ada8840de58904b3" }, "genre_name" : "Folk", "genre_notes" : null }
+{ "_id" : { "$oid" : "5ae4ecc7ada8840de58904b4" }, "genre_name" : "Hip Hop", "genre_notes" : null }
+{ "_id" : { "$oid" : "5ae4ecc7ada8840de58904b5" }, "genre_name" : "Indie", "genre_notes" : null }
+{ "_id" : { "$oid" : "5ae4ecc7ada8840de58904b6" }, "genre_name" : "Jazz", "genre_notes" : null }
+{ "_id" : { "$oid" : "5ae4ecc7ada8840de58904b7" }, "genre_name" : "Latin", "genre_notes" : null }
+{ "_id" : { "$oid" : "5ae4ecc7ada8840de58904b8" }, "genre_name" : "Pop", "genre_notes" : null }
+{ "_id" : { "$oid" : "5ae4ecc7ada8840de58904b9" }, "genre_name" : "Punk Rock", "genre_notes" : null }
+{ "_id" : { "$oid" : "5ae4ecc7ada8840de58904ba" }, "genre_name" : "R&B", "genre_notes" : null }
+{ "_id" : { "$oid" : "5ae4ecc7ada8840de58904bb" }, "genre_name" : "Reggae", "genre_notes" : null }
+{ "_id" : { "$oid" : "5ae4ecc7ada8840de58904bc" }, "genre_name" : "Rock", "genre_notes" : null }
+{ "_id" : { "$oid" : "5ae4ecc7ada8840de58904bd" }, "genre_name" : "Ska", "genre_notes" : null }
+{ "_id" : { "$oid" : "5ae4ecc7ada8840de58904be" }, "genre_name" : "Soul", "genre_notes" : null }
+{ "_id" : { "$oid" : "5ae4ecc7ada8840de58904bf" }, "genre_name" : "Soundtrack", "genre_notes" : null }
+{ "_id" : { "$oid" : "5ae4ecc7ada8840de58904c0" }, "genre_name" : "World", "genre_notes" : null }

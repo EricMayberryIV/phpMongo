@@ -1,0 +1,34 @@
+{ "_id" : { "$oid" : "5add2f143b2bee87088b4568" }, "co_name" : "Drag City", "co_description" : "" }
+{ "_id" : { "$oid" : "5add30143b2bee88068b456d" }, "co_name" : "Island Records", "co_description" : "" }
+{ "_id" : { "$oid" : "5add311a3b2bee88068b456e" }, "co_name" : "Epitaph Records", "co_description" : "" }
+{ "_id" : { "$oid" : "5add39b93b2bee86068b4573" }, "co_name" : "Ruthless Records", "co_description" : "" }
+{ "_id" : { "$oid" : "5add3af13b2bee88068b456f" }, "co_name" : "Aftermath Entertainment", "co_description" : "" }
+{ "_id" : { "$oid" : "5add3c1b3b2bee87068b456b" }, "co_name" : "Roc-A-Fella Records", "co_description" : "" }
+{ "_id" : { "$oid" : "5add3d4e3b2bee61098b4569" }, "co_name" : "Dream On Records", "co_description" : "" }
+{ "_id" : { "$oid" : "5add3dcf3b2bee61098b456b" }, "co_name" : "Republic Records", "co_description" : "" }
+{ "_id" : { "$oid" : "5add3e363b2bee87088b456b" }, "co_name" : "Epic Records", "co_description" : "" }
+{ "_id" : { "$oid" : "5add3f9d3b2bee88068b4571" }, "co_name" : "Sub Pop", "co_description" : "" }
+{ "_id" : { "$oid" : "5add41ce3b2bee61098b456d" }, "co_name" : "DGC Records", "co_description" : "" }
+{ "_id" : { "$oid" : "5add42933b2bee88068b4573" }, "co_name" : "Fat Wreck Chords", "co_description" : "" }
+{ "_id" : { "$oid" : "5adfc0623b2bee92068b4567" }, "co_name" : "Columbia", "co_description" : "" }
+{ "_id" : { "$oid" : "5ae496143b2bee94068b4568" }, "co_name" : "Merge Records", "co_description" : "" }
+{ "_id" : { "$oid" : "5ae499933b2bee92068b4567" }, "co_name" : "RCA Records", "co_description" : "" }
+{ "_id" : { "$oid" : "5ae49cd33b2bee93068b4568" }, "co_name" : "Splash Records", "co_description" : "" }
+{ "_id" : { "$oid" : "5ae49ce83b2bee94068b456b" }, "co_name" : "Medicine Label", "co_description" : "" }
+{ "_id" : { "$oid" : "5ae49da23b2bee94068b456d" }, "co_name" : "Hollywood Records", "co_description" : "" }
+{ "_id" : { "$oid" : "5ae49e0e3b2bee95068b456a" }, "co_name" : "Rhino Records", "co_description" : "" }
+{ "_id" : { "$oid" : "5ae49e783b2bee93068b4569" }, "co_name" : "Arista Records", "co_description" : "" }
+{ "_id" : { "$oid" : "5ae4a1343b2bee94068b456f" }, "co_name" : "Virgin Records", "co_description" : "" }
+{ "_id" : { "$oid" : "5ae4a1e03b2bee9f078b4567" }, "co_name" : "A&M Records", "co_description" : "" }
+{ "_id" : { "$oid" : "5ae4a3133b2bee94068b4570" }, "co_name" : "Apple Records", "co_description" : "" }
+{ "_id" : { "$oid" : "5ae536de3b2bee95068b4567" }, "co_name" : "Vertigo Records", "co_description" : "" }
+{ "_id" : { "$oid" : "5ae547443b2bee96068b4567" }, "co_name" : "Flyte Tyme Studios", "co_description" : "" }
+{ "_id" : { "$oid" : "5ae548f93b2bee93068b4568" }, "co_name" : "The Boardwalk Entertainment Co", "co_description" : "" }
+{ "_id" : { "$oid" : "5ae5499a3b2bee93068b4569" }, "co_name" : "Berhane Sound System", "co_description" : "" }
+{ "_id" : { "$oid" : "5ae54dae3b2bee93068b456b" }, "co_name" : "Asian Man Records", "co_description" : "" }
+{ "_id" : { "$oid" : "5ae557cf3b2bee95068b4569" }, "co_name" : "Revelation Records", "co_description" : "" }
+{ "_id" : { "$oid" : "5ae559333b2bee95068b456b" }, "co_name" : "Far Out Records", "co_description" : "" }
+{ "_id" : { "$oid" : "5ae55a083b2bee94068b456a" }, "co_name" : "Lookout! Records", "co_description" : "" }
+{ "_id" : { "$oid" : "5ae55b4e3b2bee97068b456b" }, "co_name" : "Prestige Records", "co_description" : "" }
+{ "_id" : { "$oid" : "5ae55d713b2bee11088b4567" }, "co_name" : "Track Records", "co_description" : "" }
+{ "_id" : { "$oid" : "5ae561913b2bee94068b456c" }, "co_name" : "Riverside Records", "co_description" : "" }
