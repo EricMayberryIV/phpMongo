@@ -21,22 +21,23 @@ If you want to use Git, go skip ahead to **Clone Project Files with Git** sectio
 If you have to manually upload the files skip down to the **Manually Upload Project Files** section.
 
 ## Clone Project Files with Git <--- THIS IS THE RECOMMENDED PROCESS
-Open a Terminal and enter the following command
+Open a Terminal and enter the following command (Make sure the dot is at the end)
 
     git clone https://github.com/EricMayberryIV/phpMongo.git .
     
 Skip down to the **Create the Database** Section
 
 ## Manually Upload Project Files
+Delete the README.md file if you want to use this readme in your project. 
 In the top menu, click File then Upload
 
 ![Alt Upload Image](assets/img/upload.PNG)
 
-Delete the README.md file if you want to use this readme in your project. Click the BROWSE FOR FILES... button. Find and select all of the project files, click open to upload the files.
+Click the BROWSE FOR FILES... button. Find and select all of the project files, click open to upload the files.
 
 ![Alt Upload All Image](assets/img/uploadAll.PNG)
 
-You need to create the directories then upload their contents from your local machine. Codio does support drag and drop so this should help ease the pain of this step a little. Once you are done, the project should look something like this.
+You need to create the directories then upload their contents from your local machine. Codio does support drag and drop (for files), so this should help ease the pain of this step a little. Once you are done, the project should look something like this.
 
 ![Alt Full Project Image](assets/img/fullProj.PNG)
 
