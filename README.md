@@ -1,6 +1,8 @@
 # Vinyl Record Collection 
 Simple CRUD app using PHP and MongoDb. Working example of using a LAMP server connected to a MongoDb server. I used Bootstrap v4.0.0 as a front-end, utilizing a 3rd party plug-in ([DataTables](https://datatables.net/)) to stylize and control the functions of the various HTML tables used. This app is a simple vinyl record inventory system.
 
+This README has been written to address setting up this project in [Codio](https://www.codio.com) for [FAMU](http://www.famu.edu/index.cfm?cis). If you have a lamp server with a MongoDb server set up, AND you have connected PHP to MongoDb, then feel free to use this as-is.
+
 ## Set Up in Codio
 Once you log in to Codio.com and navigate to your dashboard, click on Stack (under BUILD). Here you will see two stacks available to you. The type of stack we want is a basic LAMP stack with MongoDb installed in parallel. Click on the FAMU CIS/mongo apache php stack.
 
