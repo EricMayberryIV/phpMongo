@@ -17,11 +17,14 @@ Give your project a name and (optional) description, set it as public or private
 ![Alt Create Image](assets/img/create.PNG)
 
 Now we have the environment set up, we need the project files, you have two choices in accomplishing this. You can clone the project into the working directory using git or manually create each directory and upload all the files into codio (since codio doesn't allow an easy way to upload full directories). 
+
 If you want to use Git, go skip ahead to **Clone Project Files with Git** section. 
+
 If you have to manually upload the files skip down to the **Manually Upload Project Files** section.
 
 ## Clone Project Files with Git <--- THIS IS THE RECOMMENDED PROCESS
-Open a Terminal and enter the following command
+Open a Terminal and enter the following command.
+
 Make sure the dot is at the end so it will load the files into the current directory
 
     git clone https://github.com/EricMayberryIV/phpMongo.git .
@@ -30,6 +33,7 @@ Skip down to the **Create the Database** Section
 
 ## Manually Upload Project Files
 Delete the README.md file if you want to use this readme in your project. 
+
 In the top menu, click File then Upload
 
 ![Alt Upload Image](assets/img/upload.PNG)
