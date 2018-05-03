@@ -3,7 +3,7 @@ Simple CRUD app using PHP and MongoDb. Working example of using a LAMP server co
 
 This README has been written to address setting up this project in [Codio](https://www.codio.com) for [FAMU](http://www.famu.edu/index.cfm?cis). If you have a lamp server with a MongoDb server set up, AND you have connected PHP to MongoDb, then feel free to use this as-is.
 
-## Set Up in Codio
+## Set Up Codio
 Once you log in to Codio.com and navigate to your dashboard, click on Stack (under BUILD). Here you will see two stacks available to you. The type of stack we want is a basic LAMP stack with MongoDb installed in parallel. Click on the FAMU CIS/mongo apache php stack.
 
 ![Alt FAMU STACK](assets/img/stack.PNG)
@@ -20,14 +20,14 @@ Now we have the environment set up, we need the project files, you have two choi
 If you want to use Git, go skip ahead to **Clone Project Files with Git** section. 
 If you have to manually upload the files skip down to the **Manually Upload Project Files** section.
 
-### Clone Project Files with Git <--- THIS IS THE RECOMMENDED PROCESS
+## Clone Project Files with Git <--- THIS IS THE RECOMMENDED PROCESS
 Open a Terminal and enter the following command
 
     git clone https://github.com/EricMayberryIV/phpMongo.git .
     
 Skip down to the **Create the Database** Section
 
-### Manually Upload Project Files
+## Manually Upload Project Files
 In the top menu, click File then Upload
 
 ![Alt Upload Image](assets/img/upload.PNG)
