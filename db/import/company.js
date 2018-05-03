@@ -1,4 +1,3 @@
-use recColl;
 db.company.insert({ "co_name" : "Drag City", "co_description" : "" });
 db.company.insert({ "co_name" : "Island Records", "co_description" : "" });
 db.company.insert({ "co_name" : "Epitaph Records", "co_description" : "" });
@@ -33,3 +32,4 @@ db.company.insert({ "co_name" : "Lookout! Records", "co_description" : "" });
 db.company.insert({ "co_name" : "Prestige Records", "co_description" : "" });
 db.company.insert({ "co_name" : "Track Records", "co_description" : "" });
 db.company.insert({ "co_name" : "Riverside Records", "co_description" : "" });
+db.company.insert({ "co_name" : "Warner Bros.", "co_description" : "" });

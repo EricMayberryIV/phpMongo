@@ -1,9 +1,9 @@
 /**
  * Export collections
  */
-mongoexport --db recColl -c vinyl --out 'export/vinyl.json'
-mongoexport --db recColl -c genre --out 'export/genre.json'
-mongoexport --db recColl -c company --out 'export/company.json'
+mongoexport --db recColl -c vinyl --out 'db/export/vinyl.json'
+mongoexport --db recColl -c genre --out 'db/export/genre.json'
+mongoexport --db recColl -c company --out 'db/export/company.json'
 
 /**
  * Counts for each collection

@@ -32,3 +32,4 @@
 { "_id" : { "$oid" : "5ae55b4e3b2bee97068b456b" }, "co_name" : "Prestige Records", "co_description" : "" }
 { "_id" : { "$oid" : "5ae55d713b2bee11088b4567" }, "co_name" : "Track Records", "co_description" : "" }
 { "_id" : { "$oid" : "5ae561913b2bee94068b456c" }, "co_name" : "Riverside Records", "co_description" : "" }
+{ "_id" : { "$oid" : "5aea568d3b2bee94068b4568" }, "co_name" : "Warner Bros.", "co_description" : "" }

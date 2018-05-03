@@ -1,4 +1,3 @@
-use recColl;
 db.genre.insert({ "genre_name" : "Alternative", "genre_notes" : null });
 db.genre.insert({ "genre_name" : "Blues", "genre_notes" : null });
 db.genre.insert({ "genre_name" : "Classical", "genre_notes" : null });
@@ -19,3 +18,4 @@ db.genre.insert({ "genre_name" : "Ska", "genre_notes" : null });
 db.genre.insert({ "genre_name" : "Soul", "genre_notes" : null });
 db.genre.insert({ "genre_name" : "Soundtrack", "genre_notes" : null });
 db.genre.insert({ "genre_name" : "World", "genre_notes" : null });
+db.genre.insert({ "genre_name" : "Funk", "genre_notes" : "Artists like: George Clinton, Parliament, Commodores" });

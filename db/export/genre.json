@@ -18,3 +18,4 @@
 { "_id" : { "$oid" : "5ae4ecc7ada8840de58904be" }, "genre_name" : "Soul", "genre_notes" : null }
 { "_id" : { "$oid" : "5ae4ecc7ada8840de58904bf" }, "genre_name" : "Soundtrack", "genre_notes" : null }
 { "_id" : { "$oid" : "5ae4ecc7ada8840de58904c0" }, "genre_name" : "World", "genre_notes" : null }
+{ "_id" : { "$oid" : "5aea51ce3b2bee94068b4567" }, "genre_name" : "Funk", "genre_notes" : "Artists like: George Clinton, Parliament, Commodores" }
