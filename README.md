@@ -21,7 +21,8 @@ If you want to use Git, go skip ahead to **Clone Project Files with Git** sectio
 If you have to manually upload the files skip down to the **Manually Upload Project Files** section.
 
 ## Clone Project Files with Git <--- THIS IS THE RECOMMENDED PROCESS
-Open a Terminal and enter the following command (Make sure the dot is at the end)
+Open a Terminal and enter the following command
+Make sure the dot is at the end so it will load the files into the current directory
 
     git clone https://github.com/EricMayberryIV/phpMongo.git .
     
