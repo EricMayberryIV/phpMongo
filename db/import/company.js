@@ -1,3 +1,4 @@
+use recColl;
 db.company.insert({ "co_name" : "Drag City", "co_description" : "" });
 db.company.insert({ "co_name" : "Island Records", "co_description" : "" });
 db.company.insert({ "co_name" : "Epitaph Records", "co_description" : "" });
